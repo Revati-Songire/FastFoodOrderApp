@@ -10,7 +10,7 @@ function Header() {
   const [cart,setCart]=useState([])
   const navigate=useNavigate()
   useEffect(()=>{
-    fetch("http://localhost:3000/cart").then((resp1)=>{
+    fetch("https://revati-songire.github.io/FastFoodAppBuild/cart").then((resp1)=>{
       resp1.json().then((resp2)=>{
         console.log(resp2)
         setCart(resp2)
